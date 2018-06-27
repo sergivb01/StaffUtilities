@@ -3,7 +3,7 @@ main: site.solenxia.staffutilities.StaffUtilities
 version: -0.1-BETA1
 author: GregoryG, Sergii
 commands:
-  report:
-  staffchat:
-  mutechat:
-  request:
+ report:
+ staffchat:
+ mutechat:
+ request:

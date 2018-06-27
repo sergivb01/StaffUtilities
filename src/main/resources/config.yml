@@ -1,5 +1,8 @@
 server-name: "HCFactions"
 
+LICENSE_KEY:
+  - "penisEnlargmentPillsDoWork"
+
 redis:
   host: "localhost"
   port: 6379

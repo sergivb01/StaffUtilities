@@ -34,17 +34,16 @@ public class StaffUtilities extends JavaPlugin{
 			this.saveDefaultConfig();
 		}
 		this.getConfig().options().copyDefaults(true);
-
-		instance.Check();
-		instance.Check2();
+//
+//		instance.Check();
+//		instance.Check2();
 
 		new RedisManager(this);
 
 		new MuteChatListener(this);
 
-
 		getCommand("mutechat").setExecutor(new MuteChatCommand());
-		getCommand("helpop").setExecutor(new RequestCommand());
+		getCommand("request").setExecutor(new RequestCommand());
 		getCommand("report").setExecutor(new ReportCommand());
 		getCommand("staffchat").setExecutor(new StaffChatCommand());
 
@@ -65,7 +64,7 @@ public class StaffUtilities extends JavaPlugin{
 	public void Check(){
 		try{
 			boolean license = false;
-			URL url = new URL("http://solenxia.site/antileak/admin/api.php?plugin=HubCore&license=" + getConfig().getString("LICENSE_KEY"));
+			URL url = new URL("http://solenxia.site/antileak/admin/api.php?plugin=StaffUtilities=" + getConfig().getString("LICENSE_KEY"));
 			BufferedReader in = new BufferedReader(new InputStreamReader(url.openStream()));
 			String inputLine = in.readLine();
 			while(inputLine != null){
@@ -76,7 +75,7 @@ public class StaffUtilities extends JavaPlugin{
 				pdf.getVersion(); //Gets the version
 				System.out.println("-----------------------------------");
 				System.out.println(" ");
-				System.out.println("Solenxia Hubcore - Version " + pdf.getVersion());
+				System.out.println("Solenxia StaffUtils - Version " + pdf.getVersion());
 				System.out.println(" ");
 				System.out.println("Successfuly verified license key.");
 				System.out.println(" ");
@@ -105,7 +104,7 @@ public class StaffUtilities extends JavaPlugin{
 	public void Check2(){
 		try{
 			boolean license = false;
-			URL url = new URL("https://solenxia.site/antileak/admin/api.php?plugin=HubCore&license=" + getConfig().getString("LICENSE_KEY"));
+			URL url = new URL("https://solenxia.site/antileak/admin/api.php?plugin=?plugin=StaffUtilities=" + getConfig().getString("LICENSE_KEY"));
 			BufferedReader in = new BufferedReader(new InputStreamReader(url.openStream()));
 			String inputLine = in.readLine();
 			while(inputLine != null){
