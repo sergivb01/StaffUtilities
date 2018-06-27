@@ -1,6 +1,5 @@
 package site.solenxia.staffutilities.commands;
 
-import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -9,7 +8,7 @@ import site.solenxia.staffutilities.utils.StringUtils;
 
 import static org.bukkit.ChatColor.RED;
 
-public class ReportCommand implements CommandExecutor{
+public class RequestCommand implements CommandExecutor{
 
 	public boolean onCommand(CommandSender sender, Command command, String s, String[] args){
 		if(!(sender instanceof Player)){
@@ -18,33 +17,22 @@ public class ReportCommand implements CommandExecutor{
 		}
 
 		Player player = (Player) sender;
-		if(args.length < 2){
-			player.sendMessage(RED + "Invalid usage: `/report <playername> <reason...>`");
+		if(args.length < 1){
+			player.sendMessage(RED + "Invalid usage: `/request <message...>`");
 			return true;
 		}
 
-		Player target = Bukkit.getPlayer(args[0]);
-		String reason = StringUtils.join(args, 1);
+		String reason = StringUtils.join(args);
 
-		if(target == null){
-			player.sendMessage(RED + "Player `" + args[0] + "` is not online or has never joined before!");
-			return true;
-		}
-
-		if(player.equals(target)){
-			player.sendMessage(RED + "You may not report yourself!");
-			return true;
-		}
 
 		/*if(!Cache.canExecute(player)){ //TODO: Implement command delay
 			player.sendMessage(RED + "You hav already used the report or request command in the past 5 minutes! Please wait and try again.");
 			return true;
 		}*/
 
-		//new ReportPayload(player.getName(), player.getUniqueId(), target.getName(), target.getUniqueId(), reason).send();
+
+		//new RequestPayload(player.getName(), player.getUniqueId(), reason).send();
 
 		return true;
 	}
-
-
 }
