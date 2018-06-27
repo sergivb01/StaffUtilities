@@ -50,6 +50,10 @@
                     <shadedArtifactAttached>false</shadedArtifactAttached>
                     <relocations>
                         <relocation>
+                            <pattern>commons-pool</pattern>
+                            <shadedPattern>commons-pool</shadedPattern>
+                        </relocation>
+                        <relocation>
                             <pattern>redis.clients</pattern>
                             <shadedPattern>redis.clients</shadedPattern>
                         </relocation>
