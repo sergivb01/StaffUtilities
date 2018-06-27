@@ -21,7 +21,7 @@ public class MuteChatListener implements Listener{
 		Player player = event.getPlayer();
 
 		if(MuteChatCommand.muteChat && !player.hasPermission("staffutilities.mutechat.chat")){
-			player.sendMessage(RED + "Global chat is currently muted.");
+			player.sendMessage(RED + "⚠ Global chat is currently muted.");
 			event.setCancelled(true);
 		}
 	}

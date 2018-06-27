@@ -6,3 +6,17 @@ redis:
   auth:
     enabled: false
     password: "mysecret"
+
+report-formatting:
+  - "&eReported Player:&d %player%"
+  - "&eReporter Name:&d %reporterName%"
+  - "&eReason:&d %reason%"
+  - "&eServer:&d %server%"
+
+request-formatting:
+  - "&eRequested Player:&d %player%"
+  - "&eReason:&d %reason%"
+  - "&eServer:&d %server%"
+
+staffchat-formatting:
+  - "&b(SC)&e %player%: %message%"
