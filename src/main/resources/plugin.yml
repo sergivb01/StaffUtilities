@@ -1,0 +1,5 @@
+name: StaffUtilities
+main: site.solenxia.staffutilities.StaffUtilities
+version: -0.1-BETA
+author: GregoryG, Sergii
+commands:
