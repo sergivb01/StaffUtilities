@@ -5,6 +5,8 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
+import site.solenxia.staffutilities.payloads.Cache;
+import site.solenxia.staffutilities.payloads.types.ReportPayload;
 import site.solenxia.staffutilities.utils.StringUtils;
 
 import static org.bukkit.ChatColor.RED;
@@ -36,12 +38,12 @@ public class ReportCommand implements CommandExecutor{
 			return true;
 		}
 
-		/*if(!Cache.canExecute(player)){ //TODO: Implement command delay
+		if(!Cache.canExecute(player)){
 			player.sendMessage(RED + "You hav already used the report or request command in the past 5 minutes! Please wait and try again.");
 			return true;
-		}*/
+		}
 
-		//new ReportPayload(player.getName(), player.getUniqueId(), target.getName(), target.getUniqueId(), reason).send();
+		new ReportPayload(player.getName(), player.getUniqueId(), target.getName(), target.getUniqueId(), reason).send();
 
 		return true;
 	}

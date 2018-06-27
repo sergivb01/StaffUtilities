@@ -1,0 +1,17 @@
+C:\Users\Sergi\IdeaProjects\MCM-Series\StaffUtilities\src\main\java\site\solenxia\staffutilities\commands\ReportCommand.java
+C:\Users\Sergi\IdeaProjects\MCM-Series\StaffUtilities\src\main\java\site\solenxia\staffutilities\payloads\types\ServerSwitchPayload.java
+C:\Users\Sergi\IdeaProjects\MCM-Series\StaffUtilities\src\main\java\site\solenxia\staffutilities\redis\RedisManager.java
+C:\Users\Sergi\IdeaProjects\MCM-Series\StaffUtilities\src\main\java\site\solenxia\staffutilities\StaffUtilities.java
+C:\Users\Sergi\IdeaProjects\MCM-Series\StaffUtilities\src\main\java\site\solenxia\staffutilities\redis\pubsub\Subscriber.java
+C:\Users\Sergi\IdeaProjects\MCM-Series\StaffUtilities\src\main\java\site\solenxia\staffutilities\payloads\types\ReportPayload.java
+C:\Users\Sergi\IdeaProjects\MCM-Series\StaffUtilities\src\main\java\site\solenxia\staffutilities\payloads\PayloadParser.java
+C:\Users\Sergi\IdeaProjects\MCM-Series\StaffUtilities\src\main\java\site\solenxia\staffutilities\commands\MuteChatCommand.java
+C:\Users\Sergi\IdeaProjects\MCM-Series\StaffUtilities\src\main\java\site\solenxia\staffutilities\commands\RequestCommand.java
+C:\Users\Sergi\IdeaProjects\MCM-Series\StaffUtilities\src\main\java\site\solenxia\staffutilities\payloads\Cache.java
+C:\Users\Sergi\IdeaProjects\MCM-Series\StaffUtilities\src\main\java\site\solenxia\staffutilities\utils\StringUtils.java
+C:\Users\Sergi\IdeaProjects\MCM-Series\StaffUtilities\src\main\java\site\solenxia\staffutilities\payloads\types\RequestPayload.java
+C:\Users\Sergi\IdeaProjects\MCM-Series\StaffUtilities\src\main\java\site\solenxia\staffutilities\redis\pubsub\Publisher.java
+C:\Users\Sergi\IdeaProjects\MCM-Series\StaffUtilities\src\main\java\site\solenxia\staffutilities\commands\StaffChatCommand.java
+C:\Users\Sergi\IdeaProjects\MCM-Series\StaffUtilities\src\main\java\site\solenxia\staffutilities\listeners\MuteChatListener.java
+C:\Users\Sergi\IdeaProjects\MCM-Series\StaffUtilities\src\main\java\site\solenxia\staffutilities\payloads\types\Payload.java
+C:\Users\Sergi\IdeaProjects\MCM-Series\StaffUtilities\src\main\java\site\solenxia\staffutilities\payloads\types\StaffChatPayload.java

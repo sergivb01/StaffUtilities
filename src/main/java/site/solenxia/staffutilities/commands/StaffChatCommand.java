@@ -4,6 +4,7 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
+import site.solenxia.staffutilities.payloads.types.StaffChatPayload;
 import site.solenxia.staffutilities.utils.StringUtils;
 
 import static org.bukkit.ChatColor.RED;
@@ -24,7 +25,7 @@ public class StaffChatCommand implements CommandExecutor{
 
 		String message = StringUtils.join(args);
 
-		//new StaffChatPayload(participator.getUniqueId(), participator.getName(), StringUtils.join(args));
+		new StaffChatPayload(player.getUniqueId(), player.getName(), StringUtils.join(args)).send();
 
 		return false;
 	}

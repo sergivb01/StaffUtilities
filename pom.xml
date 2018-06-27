@@ -10,6 +10,12 @@
 
     <dependencies>
         <dependency>
+            <groupId>org.mongodb</groupId>
+            <artifactId>bson</artifactId>
+            <version>3.8.0</version>
+        </dependency>
+
+        <dependency>
             <groupId>redis.clients</groupId>
             <artifactId>jedis</artifactId>
             <version>2.9.0</version>
@@ -37,6 +43,15 @@
             <scope>system</scope>
             <systemPath>${basedir}/buildDeps/PaperSpigot.jar</systemPath>
         </dependency>
+
+        <dependency>
+            <groupId>com.destroystoko</groupId>
+            <artifactId>PaperSpigot</artifactId>
+            <version>1.7.10</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/buildDeps/PaperSpigot-api.jar</systemPath>
+        </dependency>
+
     </dependencies>
 
     <build>
@@ -71,6 +86,14 @@
                         </goals>
                     </execution>
                 </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
+                </configuration>
             </plugin>
         </plugins>
     </build>
