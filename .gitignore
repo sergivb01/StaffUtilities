@@ -78,4 +78,5 @@ fabric.properties
 .idea/httpRequests
 
 .idea/**
+target/**
 StaffUtilities.iml
