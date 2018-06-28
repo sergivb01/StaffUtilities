@@ -3,6 +3,8 @@ package site.solenxia.staffutilities.payloads.types;
 import lombok.Getter;
 import org.bson.Document;
 import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
+import site.solenxia.staffutilities.StaffUtilities;
 
 import java.util.UUID;
 
@@ -44,8 +46,11 @@ public class ServerSwitchPayload extends Payload{
 				.append("server", server);
 	}
 
-	public void broadcast(){
-		Bukkit.broadcastMessage(this.toDocument().toJson());
+	public void broadcast() {
+		StaffUtilities.getInstance().getConfig().getStringList("serverswitch-formatting")
+				.forEach(str -> Bukkit.broadcastMessage(ChatColor.translateAlternateColorCodes('&', str
+						.replace("%player%", playerName)
+						.replace("%server%", server)
+				)));
 	}
-
 }

@@ -24,3 +24,6 @@ request-formatting:
 
 staffchat-formatting:
   - "&b(SC)&e %player%: %message%"
+
+serverswitch-formatting:
+  - "&b(Staff) %player%: &7has changed server: %server%"
