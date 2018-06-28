@@ -30,9 +30,8 @@ public abstract class Payload{
 				.append("timestamp", System.currentTimeMillis());
 
 		RedisManager.publisher.write("payload;" +
-				document.toJson()
-		);
-		broadcast();
+				document.toJson());
+		this.broadcast();
 	}
 
 	public Collection<Player> getStaffMembers(){
