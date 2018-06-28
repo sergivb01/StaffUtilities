@@ -49,6 +49,7 @@ public class StaffUtilities extends JavaPlugin{
 
 	public void onDisable(){
 		RedisManager.getSubscriber().getJedisPubSub().unsubscribe();
+		RedisManager.getSubscriber().getJedis().disconnect();
 		RedisManager.getPublisher().getPool().destroy();
 
 		instance = null;
