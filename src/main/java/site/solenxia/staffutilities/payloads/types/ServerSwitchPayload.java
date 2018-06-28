@@ -51,6 +51,7 @@ public class ServerSwitchPayload extends Payload{
 				.forEach(str -> Bukkit.broadcastMessage(ChatColor.translateAlternateColorCodes('&', str
 						.replace("%player%", playerName)
 						.replace("%server%", server)
+						.replace("%status%", status)
 				)));
 	}
 }

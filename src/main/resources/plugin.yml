@@ -7,3 +7,6 @@ commands:
  staffchat:
  mutechat:
  request:
+ clearchat:
+ vanish:
+ staffmode:

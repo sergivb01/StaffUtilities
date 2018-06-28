@@ -23,7 +23,25 @@ request-formatting:
   - "&eServer:&d %server%"
 
 staffchat-formatting:
-  - "&b(SC)&e %player%: %message%"
+  - "&b(%server%)&e %player%: %message%"
 
 serverswitch-formatting:
-  - "&b(Staff) %player%: &7has changed server: %server%"
+  - "&b(Staff) %player%: &7has changed server: %status% : %server%"
+
+clearchat-formatting:
+  - "&cChat has been cleared by %clearName%"
+
+staffmode.compass.name: "&cTeleport Compass"
+staffmode.compass.slot: 0
+
+staffmode.book.name: "&cInspection Book"
+staffmode.book.slot: 1
+
+staffmode.followplayer.name: "&cFollow Player"
+staffmode.followplayer.slot: 2
+
+staffmode.carpet.name: "&cBetter Look"
+staffmode.carpet.slot: 4
+
+staffmode.randomteleport.name: "&CRandom Teleport"
+staffmode.randomteleport.slot: 8

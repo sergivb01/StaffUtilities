@@ -28,8 +28,7 @@ public class Publisher{
 		try{
 			jedis = pool.getResource();
 			jedis.publish(channel, message);
-			pool.close();
-			//pool.returnResource(jedis); //No longer works, pool.close() instead
+			pool.returnResource(jedis); //No longer works, pool.close() instead
 		}finally{
 			if(jedis != null){
 				jedis.close();
