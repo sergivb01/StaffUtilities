@@ -22,7 +22,7 @@ public class Publisher{
 	}
 
 	public void write(final String message){
-		System.out.println("Going to send \"" + message + "\"");
+		System.out.println("Going to send \"" + message + "\" to channel \"" + channel + "\"");
 
 		Jedis jedis = null;
 		try{
