@@ -49,7 +49,7 @@
             <artifactId>PaperSpigot</artifactId>
             <version>1.7.10</version>
             <scope>system</scope>
-            <systemPath>${basedir}/buildDeps/PaperSpigot-api.jar</systemPath>
+            <systemPath>${basedir}/buildDeps/paperspigot-api-1.7.10-R0.1-SNAPSHOT.jar</systemPath>
         </dependency>
 
     </dependencies>

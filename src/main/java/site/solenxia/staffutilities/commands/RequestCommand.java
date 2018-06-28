@@ -28,7 +28,7 @@ public class RequestCommand implements CommandExecutor{
 
 
 		if(!Cache.canExecute(player)){
-			player.sendMessage(RED + "You hav already used the report or request command in the past 5 minutes! Please wait and try again.");
+			player.sendMessage(RED + "You have already used the report or request command in the past 5 minutes! Please wait and try again.");
 			return true;
 		}
 
