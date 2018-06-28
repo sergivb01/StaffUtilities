@@ -22,6 +22,8 @@ public class Publisher{
 	}
 
 	public void write(final String message){
+		System.out.println("Going to send \"" + message + "\"");
+
 		Jedis jedis = null;
 		try{
 			jedis = pool.getResource();
