@@ -1,9 +1,9 @@
 package site.solenxia.staffutilities.redis;
 
+import lombok.Getter;
 import site.solenxia.staffutilities.StaffUtilities;
 import site.solenxia.staffutilities.redis.pubsub.Publisher;
 import site.solenxia.staffutilities.redis.pubsub.Subscriber;
-import lombok.Getter;
 
 public class RedisManager{
 	@Getter

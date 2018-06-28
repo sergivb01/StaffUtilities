@@ -13,7 +13,8 @@ public class Subscriber{
 	private StaffUtilities plugin;
 	@Getter
 	private JedisPubSub jedisPubSub;
-	@Getter private Jedis jedis;
+	@Getter
+	private Jedis jedis;
 
 	public Subscriber(StaffUtilities plugin){
 		this.plugin = plugin;
