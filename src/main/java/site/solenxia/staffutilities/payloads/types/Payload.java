@@ -31,8 +31,6 @@ public abstract class Payload{
 
 		RedisManager.publisher.write("payload;" +
 				document.toJson());
-
-		this.broadcast(getStaff());
 	}
 
 	public Collection<Player> getStaff(){
@@ -43,8 +41,8 @@ public abstract class Payload{
 
 	public abstract Document toDocument();
 
-	public void broadcast(Collection<Player> staff){
-		staff.forEach(this::sendMessage);
+	public void broadcast(){
+		getStaff().forEach(this::sendMessage);
 	}
 
 	public abstract void sendMessage(Player player);

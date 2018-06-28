@@ -18,7 +18,6 @@ public class PayloadParser{
 
 		payload.fromDocument(document);
 		payload.broadcast();
-
 	}
 
 	private static Payload getPayloadFromType(String type){
