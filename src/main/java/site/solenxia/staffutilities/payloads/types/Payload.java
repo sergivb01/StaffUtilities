@@ -31,7 +31,6 @@ public abstract class Payload{
 
 		RedisManager.publisher.write("payload;" +
 				document.toJson());
-		this.broadcast();
 	}
 
 	public Collection<Player> getStaffMembers(){

@@ -21,7 +21,7 @@ public class Subscriber{
 		if(plugin.getConfig().getBoolean("redis.auth.enabled")){
 			this.jedis.auth(plugin.getConfig().getString("redis.auth.password"));
 		}
-		this.init();
+		init();
 	}
 
 	private void init(){
