@@ -36,7 +36,4 @@ public class PlayerListener implements Listener{
 			new ServerSwitchPayload(player.getUniqueId(), player.getName(), "quit").send();
 		}
 	}
-
-
-
 }

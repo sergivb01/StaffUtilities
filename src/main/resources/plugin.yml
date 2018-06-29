@@ -5,8 +5,14 @@ author: GregoryG, Sergii
 commands:
  report:
  staffchat:
+  aliases: [sc]
  mutechat:
+  aliases: [mc]
  request:
+  aliases: [helpop]
  clearchat:
+  aliases: [cc]
  vanish:
+  aliases: [v]
  staffmode:
+  aliases: [mod, h]
